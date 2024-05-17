@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn2Lead</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <section class="header">
+        <nav>
+          <a href="index.php"><img src="./images/Logo1.png" alt="logo" /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+  
+              <li><a href="./index.php">HOME</a></li>
+              <li><a href="./about.html">ABOUT</a></li>
+              <li><a href="./index.php#course">COURSE</a></li>
+              <li><a href="blog.php">BLOG</a></li>
+              <li><a href="./index.php#internship">INTERNSHIPS</a></li>
+              <li><a href="./contact.php">CONTACT</a></li>
+           
+            </ul>
+          </div>
+          <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+  </header>
+
+  <div class="text-box">
+    <h1>Learning <br>Should never Stop!</h1>
+   
+
+    <!-- Registration Code -->
+    <div class="registerform">
+      <form action="Sregister.php" method="post">
+        
+      <h1 style="text-align: center; font-size: 35px; padding-left: 20px;">Teacher Registration</h1>
+
+        <div class="input-box">
+          <input type="text" placeholder="E-Mail" name="mail" required>
+        </div>
+        
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" name="full_name" required>
+        </div>
+
+        <div class="input-box">
+          <input type="text" placeholder="Username" name="username" required>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Password" name="password" required>
+          <input type="number" placeholder="Password" name="reco" value="0" hidden>
+        </div>
+
+        <!-- <div style="padding-top: 2px; font-size: larger;">
+          <label for="education">Education: </label>
+          <select name="Education" id="education">
+          <option value="Undergraduate">Undergraduate</option>
+          <option value="Master">Master</option>
+          <option value="Master">PHD</option>
+          <option value="Other">Other</option>
+          <br><br>
+</select>
+
+        </div> -->
+        <br><br>
+        <div class="remember">
+            <label><input type="checkbox">Remember me </label>
+          </div>
+
+        <button type="submit" class="btn">Register <a href="index.php"></a></button>
+
+        <div class="login-link">
+          <p> Already have an account? <a href="index.php">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Include the footer section if needed -->
+  <!-- ... -->
+</body>
+
+</html>

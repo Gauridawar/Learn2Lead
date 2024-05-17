@@ -1,2 +1,1 @@
-# Learn2Lead
-E-Learning website
+# educational.github.io

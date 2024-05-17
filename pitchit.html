@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn2Lead</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+
+
+  <header>
+
+    <section class="headerp">
+
+
+      <nav>
+        <a href="index.html"><img src="./images/Logo1.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.php">BLOG</a></li>
+            <li><a href="course1.php">COURSES</a></li>
+            <li><a href="./internship.html" class="smooth-scroll">INTERNSHIPS</a></li>
+            <li><a href="./contact.php">CONTACT</a></li>
+            <li><a href="./library.php">E-LIBRARY</a></li>
+
+
+          </ul>
+        </div>
+        <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="modal-content" id="modal-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <h2>Startup Application Form</h2>
+        <p>Please fill out the following details</p>
+        <form action="pitchitdb.php" method="post" id="startupForm">
+          <input type="text" id="startupName" name="startupName" placeholder="Startup Name"
+            style="height: 30px; width: 200px; border-radius: 20px; padding: 9px; border: 2px solid black;"
+            name="startupName" required><br><br>
+
+
+          <input type="text" id="yearFounded" name="yearFounded" placeholder="Year Founded"
+            style="height: 30px; width: 200px; border-radius: 20px; padding: 9px; border: 2px solid black;"
+            name="yearFounded" required><br><br>
+
+
+          <input type="file" style="margin-left: 100px;" id="uploadFile" name="uploadFile"><br><br>
+
+          <button type="submit"
+            style="background-color: red; border-radius: 20px; color: white; font-size: 20px; width: 100px; height: 30px; border: none;">Submit</button>
+
+        </form>
+
+        <div id="successMessage" style="display: none; color: green; margin-top: 10px;">
+          <i class="fa-solid fa-check"></i> Submitted Successfully
+        </div>
+      </div>
+
+      <script>
+        function submitForm(event) {
+          event.preventDefault(); // Prevent form submission
+
+          // Simulate form submission (replace this with actual form submission)
+          setTimeout(function () {
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+          }, 1000); // Change this timeout to suit your needs (1 second here for demonstration)
+        }
+      </script>
+
+  </header>
+  <div class="blurcontent">
+    <div class="text-box-pitchit">
+      <h1 style="margin-left: -900px;">Pitch-IT <br>Give life to your Ideas</h1>
+
+      <button style="margin-top: 20px;" id="applybutton" onclick="openForm()">Apply Now</button>
+    </div>
+
+
+    <a id="internships"></a>
+    <section class="campus">
+      <h1>Top Fundings of the Year</h1>
+      <p>Top Companies that got funded this year</p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="images\Google.png" alt="Adobe Internships">
+          <div class="layer">
+            <h3>GOOGLE</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images\Adobe.png" alt="Google Internships">
+          <div class="layer">
+            <h3>ADOBE</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="images\Meta.png" style="margin-top: 90px;" alt="Meta Internships">
+          <div class="layer">
+            <h3>META</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="campus">
+      <div class="row">
+        <div class="campus-col">
+          <a href="https://www.infosys.com/careers.html">
+            <img src="./images/infosys-limited-vector-logo.png" style="margin-top: 40px;" alt="infosys Internships">
+          </a>
+          <div class="layer">
+            <h3>Infosys</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <a href="https://zeptonow.openings.co/">
+            <img src="./images/zeptoi.png" style="margin-top: 70px; margin-left: 10px;" alt="Zepto Internships">
+          </a>
+          <div class="layer">
+            <h3>Zepto</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <a href="https://www.tata.com/careers">
+            <img src="tata.jpg" style="margin-top: 20px; margin-left: 10px;" alt="Tata Internships">
+          </a>
+          <div class="layer">
+            <h3>Tata</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--------- footer --------->
+
+    <section class="footer" style="margin-top: 70px;">
+      <h4>About Us</h4>
+      <p>Empowering minds and fostering leadership through Learn2Lead - Your gateway to innovative e-learning
+        experiences.
+      </p>
+      <div class="icons">
+        <i class='bx bxl-facebook'></i>
+        <i class='bx bxl-twitter'></i>
+        <i class='bx bxl-instagram'></i>
+        <i class='bx bxl-linkedin'></i>
+      </div>
+      <p>Made With <i class='bx bxs-heart' style="color: red;"></i> by Team Learn2Lead</p>
+    </section>
+  </div>
+
+
+
+  <script>
+    function redirectToLoginPage() {
+      // Get the form element
+      var loginForm = document.getElementById('loginForm');
+
+      // Assuming you want to redirect to a page named "dashboard.html" after successful login
+      var targetPage = "main.html";
+
+      // Redirect to the target page
+      window.location.href = targetPage;
+    }
+
+    // Function to open the modal
+    function openForm() {
+      // Display the modal content block
+      var modalContent = document.getElementById("modal-content");
+      modalContent.style.display = "block";
+
+      // Apply blur effect to elements with the class "blurcontent" except for the one with ID "modal-content"
+      var blurContents = document.getElementsByClassName("blurcontent");
+      var navbarcontents = document.getElementsByClassName("navbar");
+      for (var i = 0; i < navbarcontents.length; i++) {
+
+        navbarcontents[i].style.filter = "blur(5px)";
+
+      }
+      for (var i = 0; i < blurContents.length; i++) {
+
+        blurContents[i].style.filter = "blur(5px)";
+
+      }
+    }
+
+
+    // Function to close the modal
+    function closeForm() {
+      var modalContent = document.getElementById("modal-content");
+      modalContent.style.display = "none";
+
+      var blurContents = document.getElementsByClassName("blurcontent");
+      for (var i = 0; i < blurContents.length; i++) {
+        blurContents[i].style.filter = "none";
+      }
+    }
+
+  </script>
+
+
+
+</body>
+
+</html>
